@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones // CRONOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="selection:bg-black selection:text-white">
+<main class="max-w-3xl mx-auto px-4 py-8 font-typewriter text-sm leading-relaxed text-justify">
+    <a href="{% url 'index' %}" class="text-xs uppercase underline">&larr; Volver al inicio</a>
+    <h1 class="font-newspaper font-black text-3xl uppercase border-b-2 border-black pb-2 my-4">Términos y Condiciones</h1>
+    <p class="text-xs mb-4">Última actualización: octubre de 2026</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">1. Aceptación</h2>
+    <p>Al acceder y utilizar Cronos Blog usted acepta estos términos. Si no está de acuerdo, le pedimos que no utilice el sitio. Este sitio es un proyecto académico de simulación.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">2. Uso permitido</h2>
+    <ul class="list-disc ml-6">
+        <li>Consultar el contenido con fines informativos y educativos.</li>
+        <li>Suscribirse al boletín con un correo electrónico propio y válido.</li>
+    </ul>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">3. Uso prohibido</h2>
+    <ul class="list-disc ml-6">
+        <li>Intentar vulnerar, sobrecargar o acceder sin autorización al sitio o a su base de datos.</li>
+        <li>Registrar correos ajenos o enviar información falsa o maliciosa a través de los formularios.</li>
+        <li>Copiar o redistribuir el contenido con fines comerciales sin autorización.</li>
+    </ul>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">4. Propiedad intelectual</h2>
+    <p>El contenido, el diseño y el código del sitio pertenecen a su autor, salvo los recursos de terceros que conservan sus respectivas licencias. No se otorga ninguna licencia de uso más allá de la consulta personal.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">5. Limitación de responsabilidad</h2>
+    <p>La información se ofrece con fines informativos y se proporciona "tal cual", sin garantía de exactitud, disponibilidad o actualización. El autor no se responsabiliza por daños derivados del uso del sitio o de la información publicada, ni por el contenido de sitios externos enlazados.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">6. Modificaciones</h2>
+    <p>Estos términos pueden actualizarse en cualquier momento. La versión vigente es la publicada en esta página.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">7. Contacto</h2>
+    <p>Para dudas sobre estos términos escriba a contacto@cronos.local</p>
+
+    <p class="mt-6 text-xs"><a href="{% url 'privacidad' %}" class="underline">Ver Aviso de Privacidad</a></p>
+</main>
+</body>
+</html>

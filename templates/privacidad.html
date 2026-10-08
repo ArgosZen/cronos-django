@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad // CRONOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="selection:bg-black selection:text-white">
+<main class="max-w-3xl mx-auto px-4 py-8 font-typewriter text-sm leading-relaxed text-justify">
+    <a href="{% url 'index' %}" class="text-xs uppercase underline">&larr; Volver al inicio</a>
+    <h1 class="font-newspaper font-black text-3xl uppercase border-b-2 border-black pb-2 my-4">Aviso de Privacidad</h1>
+    <p class="text-xs mb-4">Última actualización: octubre de 2026</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">1. Responsable</h2>
+    <p>TU NOMBRE es responsable del tratamiento de los datos personales recabados a través de Cronos Blog, un proyecto académico de simulación. Contacto: contacto@cronos.local</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">2. Datos que recolectamos</h2>
+    <ul class="list-disc ml-6">
+        <li><strong>Correo electrónico:</strong> únicamente cuando usted lo proporciona en el formulario del boletín.</li>
+        <li><strong>Fecha y hora de suscripción:</strong> se registran automáticamente junto con el correo.</li>
+        <li><strong>Cookie técnica (csrftoken):</strong> protege el formulario contra envíos falsificados. No se usa para publicidad ni seguimiento.</li>
+        <li><strong>Datos de conexión (dirección IP):</strong> el servidor web los registra de forma temporal con fines de seguridad y diagnóstico.</li>
+    </ul>
+    <p class="mt-2">No recabamos datos personales sensibles.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">3. Finalidades</h2>
+    <p>Su correo se utiliza para enviarle el boletín de análisis de ciberseguridad y para administrar su suscripción. No lo empleamos para fines publicitarios, perfiles ni ninguna otra finalidad distinta.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">4. Transferencia de datos</h2>
+    <p>No vendemos ni compartimos su correo con terceros. Por motivos técnicos, la página carga recursos de servicios externos (Google Fonts y el CDN de Tailwind CSS), que pueden recibir su dirección IP al servir esos archivos.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">5. Medidas de protección</h2>
+    <ul class="list-disc ml-6">
+        <li>Conexión cifrada mediante HTTPS (TLS) y encabezado Strict-Transport-Security.</li>
+        <li>Política de seguridad de contenido (Content-Security-Policy) para reducir ataques de inyección de código.</li>
+        <li>Protección contra falsificación de solicitudes (CSRF) y validación del correo recibido.</li>
+        <li>Base de datos protegida con usuario y contraseña, sin acceso público.</li>
+    </ul>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">6. Derechos ARCO</h2>
+    <p>Usted puede ejercer sus derechos de Acceso, Rectificación, Cancelación y Oposición, así como darse de baja del boletín en cualquier momento, enviando una solicitud a contacto@cronos.local con el correo con el que se suscribió.</p>
+
+    <h2 class="font-newspaper font-bold text-lg uppercase mt-6 mb-2">7. Cambios al aviso</h2>
+    <p>Cualquier modificación a este aviso se publicará en esta misma página con su fecha de actualización.</p>
+
+    <p class="mt-6 text-xs"><a href="{% url 'terminos' %}" class="underline">Ver Términos y Condiciones</a></p>
+</main>
+</body>
+</html>
